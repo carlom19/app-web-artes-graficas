@@ -1,0 +1,45 @@
+{
+    "name": "artes-graficas",
+    "version": "1.0.0",
+    "description": "Aplicación web de gestión de diseño gráfico",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd server && npm run dev",
+        "client": "cd client && npm start",
+        "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.25.8",
+        "@babel/preset-env": "^7.25.8",
+        "@babel/preset-react": "^7.25.7",
+        "autoprefixer": "^10.4.20",
+        "babel-loader": "^9.2.1",
+        "concurrently": "^6.2.0",
+        "css-loader": "^7.1.2",
+        "html-webpack-plugin": "^5.6.0",
+        "jest": "^29.7.0",
+        "mini-css-extract-plugin": "^2.9.1",
+        "postcss": "^8.4.47",
+        "postcss-loader": "^8.1.1",
+        "supertest": "^7.0.0",
+        "tailwindcss": "^3.4.13",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.1.0"
+    },
+    "dependencies": {
+        "browserify-zlib": "^0.2.0",
+        "crypto-browserify": "^3.12.0",
+        "express-rate-limit": "^7.4.1",
+        "express-validator": "^7.2.0",
+        "os-browserify": "^0.3.0",
+        "path-browserify": "^1.0.1",
+        "querystring-es3": "^0.2.1",
+        "stream-browserify": "^3.0.0"
+    }
+}
